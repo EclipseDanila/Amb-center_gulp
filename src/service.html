@@ -1,0 +1,49 @@
+@@include('parts/header.html', {
+    "title": "Сервис"
+})
+<main>
+
+    <section class="section service__intro">
+        <div class="container service__intro__container">
+            <div class="service__intro-box">
+                <div class="service__intro-breadcrubs">Главная <span>/</span>  <span>Услуги</span></div>
+                <div class="service__intro-title title">Ремонт дизельных 
+                    и бензиновых ДВС</div>
+                <div class="service__intro-subtitle">Выполним диагностику двигателя и произведем качественный ремонт.</div>
+                <div class="service__intro-btn fwhite">Заказать услугу</div>
+            </div>
+        </div>
+        <img src="./assets/img/service/intro.png" alt="" class="service__intro__img">
+    </section>
+
+    <section class="section service__info">
+        <div class="container service__info-container">
+            <p class="service__info-text">
+                Диагностика — это комплекс работ, направленных на выявление причин неисправностей основных узлов автомобиля. Особенность диагностики отдельных автомобилей заключается в том, что любое транспортное средство имеет свои конструктивные особенности, а потому в каждом конкретном случае нужен индивидуальный подход. 
+            </p>
+        </div>
+    </section>
+
+    <section class="section service__gallery">
+        <div class="container service__gallery__container">
+            <img src="./assets/img/service/1.png" alt="" class="service__gallery__img">
+            <img src="./assets/img/service/2.png" alt="" class="service__gallery__img">
+            <img src="./assets/img/service/3.png" alt="" class="service__gallery__img">
+        </div>
+    </section>
+
+    <!-- SERVICE LIST START -->
+    @@include('parts/service_list.html', {
+        "title": "РАБОТЫ СТАНДАРТНОГО КОМПЛЕКСА"
+    })
+    <!-- SERVICE LIST END -->
+
+    <!-- MAP START -->
+    @@include('parts/map.html')
+    <!-- MAP END -->
+
+</main>
+
+
+
+@@include('parts/footer.html')
